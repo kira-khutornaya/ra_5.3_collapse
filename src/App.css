@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Collapse {
+  padding: 25px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.Collapse__container {
+  width: 30%;
+  padding: 16px;
+  border: 1px #e8e8e8 solid;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Collapse__content {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms ease;
+}
+
+.Collapse-link__text {
+  border-bottom: 1px dashed rgba(11, 31, 53, .3);
+}
+
+.Collapse__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.Collapse-link__icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon_close {
+  background-image: url(https://alfa-laboratory.github.io/arui-feather/styleguide/icon_arrow-up_s_black.9bc156171667a69a5c279bad4288ca20.svg);
+}
+
+.icon_open {
+  background-image: url(https://alfa-laboratory.github.io/arui-feather/styleguide/icon_arrow-down_s_black.7d5a1ad9c0d16b83a3146deb9c326a19.svg);
 }
